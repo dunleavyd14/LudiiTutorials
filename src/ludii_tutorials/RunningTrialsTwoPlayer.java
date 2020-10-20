@@ -1,11 +1,16 @@
 package ludii_tutorials;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import game.Game;
+import main.FileHandling;
 import search.mcts.nodes.BaseNode;
+import search.minimax.AlphaBetaSearch;
 import util.AI;
 import util.Context;
 import util.GameLoader;
@@ -13,14 +18,15 @@ import util.Trial;
 import util.model.Model;
 import utils.RandomAI;
 import search.mcts.MCTS;
+import search.minimax.AlphaBetaSearch;
 /**
  * Example class showing how we can run trials in Ludii
  *
  * @author Dennis Soemers
  */
-public class RunningTrials
+public class RunningTrialsTwoPlayer
 {
-	
+
 	/** The number of trials that we'd like to run */
 
 	/**
@@ -29,9 +35,28 @@ public class RunningTrials
 	 */
 	public static void main(final String[] args)
 	{
+		if (args.length < 4) {
+			System.out.println("Usage: java RunningTrials gameIdx numTrials maxSearchDepth maxCPUTime(in seconds)");
+			return;
+		}
 		// Load our game -- we only need to do this once, and can use it for many trials
-		final Game game = GameLoader.loadGameFromName("Hex.lud");
-		
+		int gameIdx = Integer.parseInt(args[0]);
+		String gameTitle = "";
+		try (BufferedReader br = new BufferedReader(new FileReader("LudiiTutorials/src/ludii_tutorials/TwoPlayer.txt"))) {
+			for (int i = 0; i < gameIdx; i++) {
+				br.readLine();
+			}
+			gameTitle = br.readLine();
+
+
+
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+
+		System.out.println(gameTitle);
+		final Game game = GameLoader.loadGameFromName(gameTitle);
+
 		// Prepare Context and Trial objects; these are also re-usable by resetting them,
 		// but we'd have to copy them if we wanted to preserve all of the different objects
 		// corresponding to different trials
@@ -39,35 +64,34 @@ public class RunningTrials
 		final Context context = new Context(game, trial);
 
 
-		final int NUM_TRIALS = 1;//Integer.parseInt(args[1]);
-		final int maxSearchDepth = 200;//Integer.parseInt(args[2]);
-		final double maxSeconds = .01 * 2;//Integer.parseInt(args[3]);
+		final int NUM_TRIALS = Integer.parseInt(args[1]);
+		final int maxSearchDepth = Integer.parseInt(args[2]);
+		final double maxSeconds = Integer.parseInt(args[3]);
 
+		System.out.println(String.format("Max depth: %d, cpuTime: %f", maxSearchDepth, maxSeconds));
 		// Create AI objects that we'd like to use to play our Trials
 		// Here we just use Ludii's built in Random AI, because it's fast
 		// Ludii uses 1-based indexing for players, so we insert a null in the list first
 		final List<AI> ais = new ArrayList<AI>();
 		ais.add(null);
-		for (int p = 1; p <= game.players().count(); ++p)
-		{
-			ais.add(MCTS.createUCT()); //this sets exploration to root 2
-		}
-		
+		ais.add(MCTS.createUCT()); //this sets exploration to root 2
+		ais.add(new AlphaBetaSearch());
 		// Now we play through multiple trials
 		for (int i = 0; i < NUM_TRIALS; ++i)
 		{
 			// This starts a new trial (resetting the Context and Trial objects if necessary)
 			BaseNode.totalNodes = 0;
+			MCTS.globalIts = 0;
 			game.start(context);
 			System.out.println("Starting a new trial!");
-			
+
 			// Random AI technically doesn't require initialisation, but it's good practice to do so
 			// for all AIs at the start of every new trial
 			for (int p = 1; p <= game.players().count(); ++p)
 			{
 				ais.get(p).initAI(game, p);
 			}
-			
+
 			// This "model" object lets us go through a trial step-by-step using a single API
 			// that works correctly for alternating-move as well as simultaneous-move games
 			final Model model = context.model();
@@ -84,14 +108,15 @@ public class RunningTrials
 				//
 				// A step is a single move in an alternating-move game (by a single player), or a set of
 				// moves (one per active player) in a simultaneous-move game.
-				model.startNewStep(context, ais, timeLimits, -1, maxSearchDepth, 0);//this is an overload whose implementation I don't believe is open source
+				model.startNewStep(context, ais, timeLimits, -1, maxSearchDepth, 0);
+				//this is an overload whose implementation I don't believe is open source
 				//I found this by looking at the decompiled class files.
 			}
-			
+
 			// When we reach this code, we know that the trial is over and we can see what ranks the
 			// different players achieved
 			final double[] ranking = trial.ranking();
-			
+
 			for (int p = 1; p <= game.players().count(); ++p)
 			{
 				// Here we print the rankings as achieved by every agent, where
@@ -105,6 +130,7 @@ public class RunningTrials
 				// of AI objects) controls that colour at the end of the trial.
 				System.out.println("Agent " + context.state().playerToAgent(p) + " achieved rank: " + ranking[p]);
 				System.out.println(BaseNode.totalNodes);
+				System.out.println(MCTS.globalIts);
 			}
 			System.out.println();
 		}
