@@ -1,0 +1,309 @@
+/lud/board/hunt/Adugo.lud
+/lud/board/hunt/Bagh Batti.lud
+/lud/board/hunt/Bagh Guti.lud
+/lud/board/hunt/Baghchal.lud
+/lud/board/hunt/Bouge Shodra.lud
+/lud/board/hunt/Cercar La Liebre.lud
+/lud/board/hunt/Coyote.lud
+/lud/board/hunt/Demala Diviyan Keliya.lud
+/lud/board/hunt/Diviyan Keliya.lud
+/lud/board/hunt/Fox and Geese.lud
+/lud/board/hunt/Go with the Floe.lud
+/lud/board/hunt/Hat Diviyan Keliya.lud
+/lud/board/hunt/Hyvn aetter Hare.lud
+/lud/board/hunt/Juroku Musashi.lud
+/lud/board/hunt/Kaooa.lud
+/lud/board/hunt/Ko-app-paw-na.lud
+/lud/board/hunt/Komikan.lud
+/lud/board/hunt/Merimueng-rimueng-do.lud
+/lud/board/hunt/Merimueng-rimueng.lud
+/lud/board/hunt/Musinaykahwhanmetowaywin.lud
+/lud/board/hunt/Pon Chochotl.lud
+/lud/board/hunt/Rimoe.lud
+/lud/board/hunt/Sher Bakar.lud
+/lud/board/hunt/Shi Liu Kan Tsiang Kun.lud
+/lud/board/hunt/Shui Yen Ho-Shang.lud
+/lud/board/hunt/Wolf and Sheep.lud
+/lud/board/hunt/Yeung Luk Sz' Kon Tseung Kwan.lud
+/lud/board/race/escape/20 Squares.lud
+/lud/board/race/escape/58 Holes.lud
+/lud/board/race/escape/Backgammon.lud
+/lud/board/race/escape/Fevga.lud
+/lud/board/race/escape/Had.lud
+/lud/board/race/escape/Pancha Keliya.lud
+/lud/board/race/escape/Plakoto.lud
+/lud/board/race/escape/Portes.lud
+/lud/board/race/escape/Royal Game of Ur.lud
+/lud/board/race/escape/Senet.lud
+/lud/board/race/escape/Tavli.lud
+/lud/board/race/escape/XII Scripta.lud
+/lud/board/race/fill/Camelot.lud
+/lud/board/race/fill/Grasshopper.lud
+/lud/board/race/fill/Halma.lud
+/lud/board/race/fill/O-Pat-Kono.lud
+/lud/board/race/fill/Salta.lud
+/lud/board/race/reach/Arimaa.lud
+/lud/board/race/reach/Ashtapada.lud
+/lud/board/race/reach/Breakthrough.lud
+/lud/board/race/reach/Conspirateurs.lud
+/lud/board/race/reach/EinStein Wurfelt Nicht.lud
+/lud/board/race/reach/Jungle.lud
+/lud/board/race/reach/Knightthrough.lud
+/lud/board/race/reach/Pente Grammai.lud
+/lud/board/race/reach/Santorini.lud
+/lud/board/race/reach/Sneakthrough.lud
+/lud/board/sow/four_rows/Bao Ki Arabu (Zanzibar 1).lud
+/lud/board/sow/four_rows/Bao Ki Arabu (Zanzibar 2).lud
+/lud/board/sow/four_rows/Hawalis.lud
+/lud/board/sow/four_rows/Hus (Damara).lud
+/lud/board/sow/four_rows/Mefuvha.lud
+/lud/board/sow/four_rows/Muvalavala (Luena).lud
+/lud/board/sow/four_rows/Owela (Benguela).lud
+/lud/board/sow/three_rows/Abalala'e.lud
+/lud/board/sow/two_rows/Ako Okwe.lud
+/lud/board/sow/two_rows/Alitev.lud
+/lud/board/sow/two_rows/Aw-li On-nam Ot-tjin.lud
+/lud/board/sow/two_rows/Bosh.lud
+/lud/board/sow/two_rows/Dabuda.lud
+/lud/board/sow/two_rows/Das Bohnenspiel.lud
+/lud/board/sow/two_rows/En Gehe.lud
+/lud/board/sow/two_rows/English Wari (St. Lucia).lud
+/lud/board/sow/two_rows/French Wari.lud
+/lud/board/sow/two_rows/Halusa.lud
+/lud/board/sow/two_rows/J'odu.lud
+/lud/board/sow/two_rows/Kalah.lud
+/lud/board/sow/two_rows/Kara.lud
+/lud/board/sow/two_rows/Mangala (Turkey).lud
+/lud/board/sow/two_rows/Mbangbi.lud
+/lud/board/sow/two_rows/Meusueb.lud
+/lud/board/sow/two_rows/Oware.lud
+/lud/board/sow/two_rows/Sungka.lud
+/lud/board/sow/two_rows/Toguz Kumalak.lud
+/lud/board/sow/two_rows/Um el Tuweisat.lud
+/lud/board/sow/two_rows/Um el-Bagara.lud
+/lud/board/sow/two_rows/Unnee Tugalluulax.lud
+/lud/board/sow/two_rows/Vai Lung Thlan.lud
+/lud/board/sow/two_rows/Waurie.lud
+/lud/board/sow/two_rows/Woli.lud
+/lud/board/sow/two_rows/Wore.lud
+/lud/board/sow/two_rows/Wouri.lud
+/lud/board/sow/two_rows/Yovodji.lud
+/lud/board/space/blocking/Amazons.lud
+/lud/board/space/blocking/Blue Nile.lud
+/lud/board/space/blocking/Cram.lud
+/lud/board/space/blocking/Domineering.lud
+/lud/board/space/blocking/French Military Game.lud
+/lud/board/space/blocking/Gala.lud
+/lud/board/space/blocking/Haretavl.lud
+/lud/board/space/blocking/Hex Amazons.lud
+/lud/board/space/blocking/Ho-Bag Gonu.lud
+/lud/board/space/blocking/Koti Keliya.lud
+/lud/board/space/blocking/L Game.lud
+/lud/board/space/blocking/Madelinette.lud
+/lud/board/space/blocking/Mu Torere.lud
+/lud/board/space/blocking/NoGo.lud
+/lud/board/space/blocking/Pong Hau K'i.lud
+/lud/board/space/blocking/Quantum Leap.lud
+/lud/board/space/blocking/Snowpaque.lud
+/lud/board/space/blocking/Spots.lud
+/lud/board/space/blocking/Susan.lud
+/lud/board/space/blocking/Tron.lud
+/lud/board/space/blocking/Tugul Shodra.lud
+/lud/board/space/connection/Abak.lud
+/lud/board/space/connection/Chameleon.lud
+/lud/board/space/connection/Cross.lud
+/lud/board/space/connection/Gonnect.lud
+/lud/board/space/connection/Havannah.lud
+/lud/board/space/connection/Hex.lud
+/lud/board/space/connection/Trax.lud
+/lud/board/space/connection/Y (Hex).lud
+/lud/board/space/connection/Y.lud
+/lud/board/space/group/Feed the Ducks.lud
+/lud/board/space/group/Groups.lud
+/lud/board/space/group/Lines of Action.lud
+/lud/board/space/group/Manalath.lud
+/lud/board/space/group/Odd.lud
+/lud/board/space/group/Omega.lud
+/lud/board/space/line/Achi.lud
+/lud/board/space/line/All Queens Chess.lud
+/lud/board/space/line/Alquerque de Tres.lud
+/lud/board/space/line/Andantino.lud
+/lud/board/space/line/Bolotudu.lud
+/lud/board/space/line/Connect Four.lud
+/lud/board/space/line/Connect6.lud
+/lud/board/space/line/Dai Hasami Shogi.lud
+/lud/board/space/line/Dala.lud
+/lud/board/space/line/Dara.lud
+/lud/board/space/line/Djara-Badakh.lud
+/lud/board/space/line/Dra.lud
+/lud/board/space/line/Five Men's Morris.lud
+/lud/board/space/line/Gomoku.lud
+/lud/board/space/line/Les Pendus.lud
+/lud/board/space/line/Morabaraba.lud
+/lud/board/space/line/Mylna.lud
+/lud/board/space/line/Nerenchi Keliya.lud
+/lud/board/space/line/Nine Men's Morris.lud
+/lud/board/space/line/Niranchy.lud
+/lud/board/space/line/Pentalath.lud
+/lud/board/space/line/Picaria.lud
+/lud/board/space/line/Pushing Me XO.lud
+/lud/board/space/line/Ringo.lud
+/lud/board/space/line/Round Merels.lud
+/lud/board/space/line/Score Four.lud
+/lud/board/space/line/Shisima.lud
+/lud/board/space/line/Shiva.lud
+/lud/board/space/line/Six Men's Morris.lud
+/lud/board/space/line/Spline.lud
+/lud/board/space/line/Squava.lud
+/lud/board/space/line/Sujjua.lud
+/lud/board/space/line/Symbol S.2.lud
+/lud/board/space/line/Tant Fant.lud
+/lud/board/space/line/Tauru.lud
+/lud/board/space/line/Three Men's Morris.lud
+/lud/board/space/line/Tic-Tac-Chess.lud
+/lud/board/space/line/Tic-Tac-Toe.lud
+/lud/board/space/line/Twelve Men's Morris.lud
+/lud/board/space/line/Ultimate Tic-Tac-Toe.lud
+/lud/board/space/line/Wure Dune.lud
+/lud/board/space/line/Yavalanchor.lud
+/lud/board/space/line/Yavalath.lud
+/lud/board/space/pattern/Kensington.lud
+/lud/board/space/territory/Ataxx.lud
+/lud/board/space/territory/Go.lud
+/lud/board/space/territory/Lotus.lud
+/lud/board/space/territory/Phantom Go.lud
+/lud/board/space/territory/Reversi.lud
+/lud/board/war/chaturanga/Chaturanga.lud
+/lud/board/war/chaturanga/Game of the Pawns.lud
+/lud/board/war/chaturanga/Hindustani Chess.lud
+/lud/board/war/chaturanga/Mak Ruk.lud
+/lud/board/war/chaturanga/Shatranj.lud
+/lud/board/war/chaturanga/Shatren.lud
+/lud/board/war/chess/Amazon Chess.lud
+/lud/board/war/chess/Brusky Chess.lud
+/lud/board/war/chess/Capture the Queen.lud
+/lud/board/war/chess/Chess.lud
+/lud/board/war/chess/Chex.lud
+/lud/board/war/chess/De Vasa Chess.lud
+/lud/board/war/chess/Double Chess.lud
+/lud/board/war/chess/Glinski Chess.lud
+/lud/board/war/chess/Grande Acedrex.lud
+/lud/board/war/chess/Half Chess.lud
+/lud/board/war/chess/Horde Chess.lud
+/lud/board/war/chess/Loop Chess.lud
+/lud/board/war/chess/Los Alamos Chess.lud
+/lud/board/war/chess/Maharajah Chess.lud
+/lud/board/war/chess/McCooey Chess.lud
+/lud/board/war/chess/Mini Hexchess.lud
+/lud/board/war/chess/Saxun.lud
+/lud/board/war/chess/Shafran Chess.lud
+/lud/board/war/chess/Skirmish (GDL).lud
+/lud/board/war/chess/Social Distance Chess.lud
+/lud/board/war/chess/Starchess.lud
+/lud/board/war/leaping/alquerque/Ahtarah Guti.lud
+/lud/board/war/leaping/alquerque/Alquerque.lud
+/lud/board/war/leaping/alquerque/Bara Guti.lud
+/lud/board/war/leaping/alquerque/Hewakam Keliya.lud
+/lud/board/war/leaping/alquerque/Kharbaga.lud
+/lud/board/war/leaping/alquerque/Kotu Ellima.lud
+/lud/board/war/leaping/alquerque/Meurimueng-rimueng Peuet Ploh.lud
+/lud/board/war/leaping/alquerque/Mogul Putt'han.lud
+/lud/board/war/leaping/alquerque/Peralikatuma.lud
+/lud/board/war/leaping/alquerque/Ratti-Chitti-Bakri.lud
+/lud/board/war/leaping/alquerque/Satoel.lud
+/lud/board/war/leaping/alquerque/Terhuchu.lud
+/lud/board/war/leaping/alquerque/Tuknanavuhpi.lud
+/lud/board/war/leaping/alquerque/Zamma.lud
+/lud/board/war/leaping/draughts/Brazilian Draughts.lud
+/lud/board/war/leaping/draughts/Canadian Draughts.lud
+/lud/board/war/leaping/draughts/Dam.lud
+/lud/board/war/leaping/draughts/Dama.lud
+/lud/board/war/leaping/draughts/English Draughts.lud
+/lud/board/war/leaping/draughts/Game of Solomon.lud
+/lud/board/war/leaping/draughts/Guerrilla Checkers.lud
+/lud/board/war/leaping/draughts/HexDame.lud
+/lud/board/war/leaping/draughts/International Draughts.lud
+/lud/board/war/leaping/draughts/Lasca.lud
+/lud/board/war/leaping/draughts/Makvoer.lud
+/lud/board/war/leaping/other/Awithlaknannai.lud
+/lud/board/war/leaping/other/Dash Guti.lud
+/lud/board/war/leaping/other/Egara Guti.lud
+/lud/board/war/leaping/other/Felli.lud
+/lud/board/war/leaping/other/Gol Ekuish.lud
+/lud/board/war/leaping/other/Konane.lud
+/lud/board/war/leaping/other/Koruboddo.lud
+/lud/board/war/leaping/other/Laram Wali.lud
+/lud/board/war/leaping/other/Lau Kata Kati.lud
+/lud/board/war/leaping/other/Nei-Pat-Kono.lud
+/lud/board/war/leaping/other/Pretwa.lud
+/lud/board/war/leaping/other/Tre Guti.lud
+/lud/board/war/other/Ad elta stelpur.lud
+/lud/board/war/other/Atari Go.lud
+/lud/board/war/other/Awangdu.lud
+/lud/board/war/other/Bizingo.lud
+/lud/board/war/other/Boseog Gonu.lud
+/lud/board/war/other/Castello.lud
+/lud/board/war/other/Clobber.lud
+/lud/board/war/other/Fanorona.lud
+/lud/board/war/other/Ja-Jeon-Geo-Gonu.lud
+/lud/board/war/other/L'attaque.lud
+/lud/board/war/other/Ludus Latrunculorum.lud
+/lud/board/war/other/Maak Yek.lud
+/lud/board/war/other/Mehen.lud
+/lud/board/war/other/Ploy.lud
+/lud/board/war/other/Press Ups.lud
+/lud/board/war/other/Queah Game.lud
+/lud/board/war/other/Seega.lud
+/lud/board/war/other/Shantarad.lud
+/lud/board/war/other/Sijat El Taba.lud
+/lud/board/war/other/Surakarta.lud
+/lud/board/war/shogi/Dice Shogi.lud
+/lud/board/war/shogi/Hasami Shogi.lud
+/lud/board/war/shogi/Kyoto Shogi.lud
+/lud/board/war/shogi/Minishogi.lud
+/lud/board/war/shogi/Shogi.lud
+/lud/board/war/shogi/Taikyoku Shogi.lud
+/lud/board/war/shogi/Tobi Shogi.lud
+/lud/board/war/tafl/Alea Evangelii.lud
+/lud/board/war/tafl/ArdRi.lud
+/lud/board/war/tafl/Brandub.lud
+/lud/board/war/tafl/HeXentafl.lud
+/lud/board/war/tafl/Hnefatafl.lud
+/lud/board/war/tafl/Tablut.lud
+/lud/board/war/tafl/Tawlbwrdd.lud
+/lud/board/war/xiangqi/Banqi.lud
+/lud/board/war/xiangqi/Janggi.lud
+/lud/board/war/xiangqi/Manzhouqi.lud
+/lud/board/war/xiangqi/Xiangqi.lud
+/lud/dice/Pasa.lud
+/lud/dominoes/Block.lud
+/lud/experimental/Abrobad.lud
+/lud/experimental/Flowers.lud
+/lud/experimental/Inkblots.lud
+/lud/experimental/Trike.lud
+/lud/experimental/graph_theory/Ciri Amber.lud
+/lud/experimental/graph_theory/CrossGeo.lud
+/lud/experimental/graph_theory/Ilpion.lud
+/lud/experimental/graph_theory/LastEdge.lud
+/lud/experimental/graph_theory/Line and Cross.lud
+/lud/experimental/graph_theory/Nedilmarth.lud
+/lud/experimental/graph_theory/OddEvenTree.lud
+/lud/experimental/graph_theory/Onek Rong.lud
+/lud/experimental/graph_theory/Radran.lud
+/lud/experimental/graph_theory/Windir.lud
+/lud/math/graph/Contagion.lud
+/lud/math/graph/Crossline.lud
+/lud/math/graph/DisPath.lud
+/lud/math/graph/Dots and Boxes.lud
+/lud/math/graph/Hackenbush.lud
+/lud/math/graph/MaxMatch.lud
+/lud/math/graph/Sim.lud
+/lud/math/graph/Two-Colour.lud
+/lud/math/graph/Wagner.lud
+/lud/math/hand/Chopsticks.lud
+/lud/math/hand/Morra.lud
+/lud/math/hand/Rock-Paper-Scissors.lud
+/lud/math/nim/Chomp.lud
+/lud/math/nim/Nim.lud
+/lud/puzzle/planning/Chess Puzzle.lud
+/lud/puzzle/planning/Shogi Puzzle.lud

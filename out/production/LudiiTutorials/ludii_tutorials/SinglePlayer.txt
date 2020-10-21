@@ -1,0 +1,18 @@
+/lud/experimental/graph_theory/Nein Ari.lud
+/lud/experimental/graph_theory/Oriath.lud
+/lud/experimental/graph_theory/SpanRups.lud
+/lud/math/graph/solo/Hamiltonian Maze.lud
+/lud/math/graph/solo/Icosian.lud
+/lud/puzzle/deduction/Fill A Pix.lud
+/lud/puzzle/deduction/Latin Square.lud
+/lud/puzzle/deduction/Magic Hexagon.lud
+/lud/puzzle/deduction/Magic Square.lud
+/lud/puzzle/deduction/N Queens.lud
+/lud/puzzle/deduction/Sudoku.lud
+/lud/puzzle/planning/Chase.lud
+/lud/puzzle/planning/Insanity.lud
+/lud/puzzle/planning/Knight's Tour.lud
+/lud/puzzle/planning/N Puzzles.lud
+/lud/puzzle/planning/Peg Solitaire.lud
+/lud/puzzle/planning/Theseus and the Minotaur.lud
+/lud/puzzle/planning/Tower of Hanoi.lud
