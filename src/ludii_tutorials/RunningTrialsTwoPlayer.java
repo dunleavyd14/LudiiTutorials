@@ -66,10 +66,10 @@ public class RunningTrialsTwoPlayer
 
 		final int numTrials = Integer.parseInt(args[1]);
 		final int maxSearchDepth = Integer.parseInt(args[2]);
-		final double maxSeconds = Integer.parseInt(args[3]);
+		final double maxSeconds = Double.parseDouble(args[3]);
 
-		final int controlAIDepth = 10; //for now unused because only one depth can be passed, unlike cpu time
-		final double controlAITimeLimit = .01;
+		final int controlAIDepth = Integer.parseInt(args[4]); //for now unused because only one depth can be passed, unlike cpu time
+		final double controlAITimeLimit = Double.parseDouble(args[5]);
 
 		System.out.println(String.format("Max depth: %d, cpuTime: %f", maxSearchDepth, maxSeconds));
 		// Create AI objects that we'd like to use to play our Trials
@@ -77,9 +77,9 @@ public class RunningTrialsTwoPlayer
 		// Ludii uses 1-based indexing for players, so we insert a null in the list first
 		final List<AI> ais = new ArrayList<AI>();
 		ais.add(null);
-		MCTS p1 = MCTS.createTrackedUCT();
+		MCTS p1 = MCTS.createTrackedUCT(maxSearchDepth);
 		ais.add(p1);
-		ais.add(new RandomAI()); //using this because the forward model takes only one parameter for maxDepth. as far
+		ais.add(MCTS.createUCT(Math.sqrt(2.0), controlAIDepth)); //using this because the forward model takes only one parameter for maxDepth. as far
 								// as I can tell, no overload lets me specify a specific depth per AI.
 
 

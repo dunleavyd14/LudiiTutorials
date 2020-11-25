@@ -70,7 +70,7 @@ public class RunningTrialsSinglePlayer
 		// Create AI objects that we'd like to use to play our Trials
 		// Here we just use Ludii's built in Random AI, because it's fast
 		// Ludii uses 1-based indexing for players, so we insert a null in the list first
-		MCTS p1 = MCTS.createTrackedUCT();
+		MCTS p1 = MCTS.createTrackedUCT(maxSearchDepth);
 		final List<AI> ais = new ArrayList<AI>();
 		ais.add(null);
 		ais.add(p1);

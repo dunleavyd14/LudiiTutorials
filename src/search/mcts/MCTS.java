@@ -182,11 +182,11 @@ public class MCTS extends ExpertPolicy
 	 */
 	public static MCTS createUCT()
 	{
-		return createUCT(Math.sqrt(2.0));
+		return createUCT(Math.sqrt(2.0), 200);
 	}
 
-	public static MCTS createTrackedUCT() {
-		MCTS mcts = createUCT();
+	public static MCTS createTrackedUCT(int rolloutDepth) {
+		MCTS mcts = createUCT(Math.sqrt(2.0), rolloutDepth);
 		mcts.tracked = true;
 		return mcts;
 	}
@@ -198,13 +198,13 @@ public class MCTS extends ExpertPolicy
 	 * @param explorationConstant
 	 * @return UCT agent
 	 */
-	public static MCTS createUCT(final double explorationConstant)
+	public static MCTS createUCT(final double explorationConstant, int rolloutDepth)
 	{
 		final MCTS uct = 
 				new MCTS
 				(
 					new UCB1(explorationConstant), 
-					new RandomPlayout(200),
+					new RandomPlayout(rolloutDepth),
 					new RobustChild()
 				);
 		
